@@ -6,7 +6,6 @@ const logsServices = require('../services/logs.services');
 class LogsController {
 
     async all(_req, res) {
-        console.log('Hola')
         try {
             const response = await logsServices.getAll();
             res.json({ response });
